@@ -1,0 +1,60 @@
+@import "compass/reset";
+.sign_main{
+  width: 400px;
+  /**background-color: #FBFEFE;**/
+  border-top:1px solid #e3e3e3;
+  font-family: "Microsoft YaHei",SimHei;display: block;
+  .sign_succ_calendar_title{
+    text-align: center;
+    width:398px;
+    border-left:1px solid #e3e3e3;
+    border-right:1px solid #e3e3e3;
+    background:#fff;
+    .calendar_month_next,.calendar_month_prev{
+      width: 34px;
+      height: 40px;
+      cursor: pointer;
+      background:url(images/sign_arrow.png) no-repeat;
+    }
+    .calendar_month_next {
+      float: right;
+      background-position:-42px -6px;
+    }
+    .calendar_month_prev {
+      float: left;
+      background-position:-5px -6px;
+    }
+    .calendar_month_span {
+      display: inline;
+      line-height: 40px;
+      font-size: 16px;
+      color: #656565;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+  }
+  .sign{
+    table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      width:100%;
+      th,td{
+        width: 30px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border:1px solid #e3e3e3;
+      }
+      th{
+        font-size: 16px;
+      }
+      td{
+        color: #404040;
+        vertical-align: middle;
+      }
+      .on {
+        background: url(../images/sign_have.gif) no-repeat center;
+      }
+    }
+  }
+}
